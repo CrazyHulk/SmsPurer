@@ -6,6 +6,7 @@
 //
 
 import IdentityLookup
+import os.log
 
 final class MessageFilterExtension: ILMessageFilterExtension {}
 
@@ -14,7 +15,8 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     func handle(_ queryRequest: ILMessageFilterQueryRequest, context: ILMessageFilterExtensionContext, completion: @escaping (ILMessageFilterQueryResponse) -> Void) {
         // First, check whether to filter using offline data (if possible).
         let offlineAction = self.offlineAction(for: queryRequest)
-
+        
+        os_log("%{public}@", log: OSLog(subsystem: "======", category: "myExtension"), type: OSLogType.debug, "Push received!")
         switch offlineAction {
         case .allow, .junk, .promotion, .transaction:
             // Based on offline data, we know this message should either be Allowed, Filtered as Junk, Promotional or Transactional. Send response immediately.
@@ -47,6 +49,18 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
 
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
         // Replace with logic to perform offline check whether to filter first (if possible).
+        os_log("%{public}@", log: OSLog(subsystem: "------", category: "myExtension"), type: OSLogType.debug, "Push received!")
+//        guard let messageBody = queryRequest.messageBody?.lowercased() else { return .none }
+//        
+//        self.loadItems()
+//        
+//        for word in self.words {
+//            if let value = word.value,
+//                messageBody.contains(value.lowercased()) {
+//                return .filter
+//            }
+//        }
+//        return .allow
         return .none
     }
 

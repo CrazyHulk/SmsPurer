@@ -22,6 +22,18 @@ struct ContentView: View {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        Button("click") {
+                            let bertQA = try! BertQAHandler()
+                            guard let result = bertQA.run(query: "棋牌", content: "aaa") else {
+//                              os_log("Failed to inference the answer.")
+//                              statusMessage = StatusMessage.inferenceFailError
+                              return
+                            }
+                            print(result)
+                        }
+                        .foregroundColor(.red)
+                        .background(Color.purple)
+                        .cornerRadius(163.0)
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
                     }
@@ -35,7 +47,7 @@ struct ContentView: View {
                 ToolbarItem {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
-                    }
+                    }.cornerRadius(3.0)
                 }
             }
             Text("Select an item")

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A209398C27FDE22800C2C3ED /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209397A27FDE22800C2C3ED /* Dataset.swift */; };
+		A209398D27FDE22800C2C3ED /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209397C27FDE22800C2C3ED /* Result.swift */; };
+		A209398E27FDE22800C2C3ED /* BertQAHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209397D27FDE22800C2C3ED /* BertQAHandler.swift */; };
+		A209398F27FDE22800C2C3ED /* InputFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209397E27FDE22800C2C3ED /* InputFeatures.swift */; };
+		A209399027FDE22800C2C3ED /* ContentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209397F27FDE22800C2C3ED /* ContentData.swift */; };
+		A209399127FDE22800C2C3ED /* WordpieceTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398127FDE22800C2C3ED /* WordpieceTokenizer.swift */; };
+		A209399227FDE22800C2C3ED /* BasicTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398227FDE22800C2C3ED /* BasicTokenizer.swift */; };
+		A209399327FDE22800C2C3ED /* FullTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398327FDE22800C2C3ED /* FullTokenizer.swift */; };
+		A209399427FDE22800C2C3ED /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398427FDE22800C2C3ED /* FileLoader.swift */; };
+		A209399527FDE22800C2C3ED /* variables.data-00000-of-00001.sms in Resources */ = {isa = PBXBuildFile; fileRef = A209398627FDE22800C2C3ED /* variables.data-00000-of-00001.sms */; };
+		A209399627FDE22800C2C3ED /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398827FDE22800C2C3ED /* StringExtension.swift */; };
+		A209399727FDE22800C2C3ED /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398927FDE22800C2C3ED /* DataExtension.swift */; };
+		A209399827FDE22800C2C3ED /* UnicodeScalarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398A27FDE22800C2C3ED /* UnicodeScalarExtension.swift */; };
+		A209399927FDE22800C2C3ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A209398B27FDE22800C2C3ED /* Constants.swift */; };
 		A2E4068327E0C7F6001DA977 /* SmsPurerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E4068227E0C7F6001DA977 /* SmsPurerApp.swift */; };
 		A2E4068527E0C7F6001DA977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E4068427E0C7F6001DA977 /* ContentView.swift */; };
 		A2E4068727E0C7F8001DA977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E4068627E0C7F8001DA977 /* Assets.xcassets */; };
@@ -16,6 +30,12 @@
 		A2E4069927E0C7F8001DA977 /* SmsPurerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E4069827E0C7F8001DA977 /* SmsPurerTests.swift */; };
 		A2E406A327E0C7F8001DA977 /* SmsPurerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E406A227E0C7F8001DA977 /* SmsPurerUITests.swift */; };
 		A2E406A527E0C7F8001DA977 /* SmsPurerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E406A427E0C7F8001DA977 /* SmsPurerUITestsLaunchTests.swift */; };
+		A2E406B827E0C82C001DA977 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E406B727E0C82C001DA977 /* MessageFilterExtension.swift */; };
+		A2E406BC27E0C82C001DA977 /* purerext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A2E406B527E0C82C001DA977 /* purerext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3AA3037F4833A8C5F5438D9 /* Pods_SmsPurer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34F92C2C3C3743FB00C92A7 /* Pods_SmsPurer.framework */; };
+		C6562473E11D3772212ECCB1 /* Pods_SmsPurerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C9A2FB769336FA7AA83A8 /* Pods_SmsPurerTests.framework */; };
+		DAC3370EBF78A848F929D72D /* Pods_SmsPurer_SmsPurerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6678A8771CDA63A7D80CAF1 /* Pods_SmsPurer_SmsPurerUITests.framework */; };
+		ECF5F2233164667395A8AB83 /* Pods_purerext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8557971D652A8B20A986A06A /* Pods_purerext.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +53,55 @@
 			remoteGlobalIDString = A2E4067E27E0C7F6001DA977;
 			remoteInfo = SmsPurer;
 		};
+		A2E406BA27E0C82C001DA977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2E4067727E0C7F6001DA977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2E406B427E0C82C001DA977;
+			remoteInfo = purerext;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A2E406C027E0C82C001DA977 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2E406BC27E0C82C001DA977 /* purerext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1A6808B630CFB8FEA0CD696C /* Pods-purerext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purerext.debug.xcconfig"; path = "Target Support Files/Pods-purerext/Pods-purerext.debug.xcconfig"; sourceTree = "<group>"; };
+		2738063983B69785059846F5 /* Pods-SmsPurerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurerTests.release.xcconfig"; path = "Target Support Files/Pods-SmsPurerTests/Pods-SmsPurerTests.release.xcconfig"; sourceTree = "<group>"; };
+		2814F013A93B2AAE327B5EB4 /* Pods-purerext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purerext.release.xcconfig"; path = "Target Support Files/Pods-purerext/Pods-purerext.release.xcconfig"; sourceTree = "<group>"; };
+		34484306141142FCDE451F4D /* Pods-SmsPurer-SmsPurerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurer-SmsPurerUITests.release.xcconfig"; path = "Target Support Files/Pods-SmsPurer-SmsPurerUITests/Pods-SmsPurer-SmsPurerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42783B7B6B94DDE4C3A48B02 /* Pods-SmsPurer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurer.debug.xcconfig"; path = "Target Support Files/Pods-SmsPurer/Pods-SmsPurer.debug.xcconfig"; sourceTree = "<group>"; };
+		4A2C9A2FB769336FA7AA83A8 /* Pods_SmsPurerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmsPurerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CB3B453D610ABD7305F9FD /* Pods-SmsPurer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurer.release.xcconfig"; path = "Target Support Files/Pods-SmsPurer/Pods-SmsPurer.release.xcconfig"; sourceTree = "<group>"; };
+		8557971D652A8B20A986A06A /* Pods_purerext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_purerext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		869B2DEED0DF458E55836E16 /* Pods-SmsPurer-SmsPurerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurer-SmsPurerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmsPurer-SmsPurerUITests/Pods-SmsPurer-SmsPurerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A209397A27FDE22800C2C3ED /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		A209397C27FDE22800C2C3ED /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A209397D27FDE22800C2C3ED /* BertQAHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BertQAHandler.swift; sourceTree = "<group>"; };
+		A209397E27FDE22800C2C3ED /* InputFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFeatures.swift; sourceTree = "<group>"; };
+		A209397F27FDE22800C2C3ED /* ContentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentData.swift; sourceTree = "<group>"; };
+		A209398127FDE22800C2C3ED /* WordpieceTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordpieceTokenizer.swift; sourceTree = "<group>"; };
+		A209398227FDE22800C2C3ED /* BasicTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTokenizer.swift; sourceTree = "<group>"; };
+		A209398327FDE22800C2C3ED /* FullTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullTokenizer.swift; sourceTree = "<group>"; };
+		A209398427FDE22800C2C3ED /* FileLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		A209398627FDE22800C2C3ED /* variables.data-00000-of-00001.sms */ = {isa = PBXFileReference; lastKnownFileType = file; path = "variables.data-00000-of-00001.sms"; sourceTree = "<group>"; };
+		A209398827FDE22800C2C3ED /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A209398927FDE22800C2C3ED /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		A209398A27FDE22800C2C3ED /* UnicodeScalarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeScalarExtension.swift; sourceTree = "<group>"; };
+		A209398B27FDE22800C2C3ED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2E3709927E217FD006B81A0 /* SmsPurer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmsPurer.entitlements; sourceTree = "<group>"; };
+		A2E3709A27E21828006B81A0 /* purerext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = purerext.entitlements; sourceTree = "<group>"; };
 		A2E4067F27E0C7F6001DA977 /* SmsPurer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmsPurer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E4068227E0C7F6001DA977 /* SmsPurerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsPurerApp.swift; sourceTree = "<group>"; };
 		A2E4068427E0C7F6001DA977 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +114,12 @@
 		A2E4069E27E0C7F8001DA977 /* SmsPurerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmsPurerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E406A227E0C7F8001DA977 /* SmsPurerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsPurerUITests.swift; sourceTree = "<group>"; };
 		A2E406A427E0C7F8001DA977 /* SmsPurerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsPurerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2E406B527E0C82C001DA977 /* purerext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = purerext.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E406B727E0C82C001DA977 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		A2E406B927E0C82C001DA977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34F92C2C3C3743FB00C92A7 /* Pods_SmsPurer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmsPurer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6678A8771CDA63A7D80CAF1 /* Pods_SmsPurer_SmsPurerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmsPurer_SmsPurerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25361C52914826AEAB647A0 /* Pods-SmsPurerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsPurerTests.debug.xcconfig"; path = "Target Support Files/Pods-SmsPurerTests/Pods-SmsPurerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AA3037F4833A8C5F5438D9 /* Pods_SmsPurer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6562473E11D3772212ECCB1 /* Pods_SmsPurerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,19 +143,119 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC3370EBF78A848F929D72D /* Pods_SmsPurer_SmsPurerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E406B227E0C82C001DA977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5F2233164667395A8AB83 /* Pods_purerext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		734E344C0641E54AAFBFF650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42783B7B6B94DDE4C3A48B02 /* Pods-SmsPurer.debug.xcconfig */,
+				83CB3B453D610ABD7305F9FD /* Pods-SmsPurer.release.xcconfig */,
+				869B2DEED0DF458E55836E16 /* Pods-SmsPurer-SmsPurerUITests.debug.xcconfig */,
+				34484306141142FCDE451F4D /* Pods-SmsPurer-SmsPurerUITests.release.xcconfig */,
+				E25361C52914826AEAB647A0 /* Pods-SmsPurerTests.debug.xcconfig */,
+				2738063983B69785059846F5 /* Pods-SmsPurerTests.release.xcconfig */,
+				1A6808B630CFB8FEA0CD696C /* Pods-purerext.debug.xcconfig */,
+				2814F013A93B2AAE327B5EB4 /* Pods-purerext.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9392BC6C4C1063515C8755AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A34F92C2C3C3743FB00C92A7 /* Pods_SmsPurer.framework */,
+				D6678A8771CDA63A7D80CAF1 /* Pods_SmsPurer_SmsPurerUITests.framework */,
+				4A2C9A2FB769336FA7AA83A8 /* Pods_SmsPurerTests.framework */,
+				8557971D652A8B20A986A06A /* Pods_purerext.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A209397827FDE22800C2C3ED /* SMSCore */ = {
+			isa = PBXGroup;
+			children = (
+				A209397927FDE22800C2C3ED /* Models */,
+				A209398527FDE22800C2C3ED /* Resources */,
+				A209398727FDE22800C2C3ED /* Extensions */,
+				A209398B27FDE22800C2C3ED /* Constants.swift */,
+			);
+			path = SMSCore;
+			sourceTree = "<group>";
+		};
+		A209397927FDE22800C2C3ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A209397A27FDE22800C2C3ED /* Dataset.swift */,
+				A209397B27FDE22800C2C3ED /* ML */,
+				A209398027FDE22800C2C3ED /* Tokenizers */,
+				A209398427FDE22800C2C3ED /* FileLoader.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A209397B27FDE22800C2C3ED /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				A209397C27FDE22800C2C3ED /* Result.swift */,
+				A209397D27FDE22800C2C3ED /* BertQAHandler.swift */,
+				A209397E27FDE22800C2C3ED /* InputFeatures.swift */,
+				A209397F27FDE22800C2C3ED /* ContentData.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		A209398027FDE22800C2C3ED /* Tokenizers */ = {
+			isa = PBXGroup;
+			children = (
+				A209398127FDE22800C2C3ED /* WordpieceTokenizer.swift */,
+				A209398227FDE22800C2C3ED /* BasicTokenizer.swift */,
+				A209398327FDE22800C2C3ED /* FullTokenizer.swift */,
+			);
+			path = Tokenizers;
+			sourceTree = "<group>";
+		};
+		A209398527FDE22800C2C3ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A209398627FDE22800C2C3ED /* variables.data-00000-of-00001.sms */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A209398727FDE22800C2C3ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A209398827FDE22800C2C3ED /* StringExtension.swift */,
+				A209398927FDE22800C2C3ED /* DataExtension.swift */,
+				A209398A27FDE22800C2C3ED /* UnicodeScalarExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A2E4067627E0C7F6001DA977 = {
 			isa = PBXGroup;
 			children = (
+				A209397827FDE22800C2C3ED /* SMSCore */,
 				A2E4068127E0C7F6001DA977 /* SmsPurer */,
 				A2E4069727E0C7F8001DA977 /* SmsPurerTests */,
 				A2E406A127E0C7F8001DA977 /* SmsPurerUITests */,
+				A2E406B627E0C82C001DA977 /* purerext */,
 				A2E4068027E0C7F6001DA977 /* Products */,
+				734E344C0641E54AAFBFF650 /* Pods */,
+				9392BC6C4C1063515C8755AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +265,7 @@
 				A2E4067F27E0C7F6001DA977 /* SmsPurer.app */,
 				A2E4069427E0C7F8001DA977 /* SmsPurerTests.xctest */,
 				A2E4069E27E0C7F8001DA977 /* SmsPurerUITests.xctest */,
+				A2E406B527E0C82C001DA977 /* purerext.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +273,7 @@
 		A2E4068127E0C7F6001DA977 /* SmsPurer */ = {
 			isa = PBXGroup;
 			children = (
+				A2E3709927E217FD006B81A0 /* SmsPurer.entitlements */,
 				A2E4068227E0C7F6001DA977 /* SmsPurerApp.swift */,
 				A2E4068427E0C7F6001DA977 /* ContentView.swift */,
 				A2E4068627E0C7F8001DA977 /* Assets.xcassets */,
@@ -133,6 +309,16 @@
 			path = SmsPurerUITests;
 			sourceTree = "<group>";
 		};
+		A2E406B627E0C82C001DA977 /* purerext */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3709A27E21828006B81A0 /* purerext.entitlements */,
+				A2E406B727E0C82C001DA977 /* MessageFilterExtension.swift */,
+				A2E406B927E0C82C001DA977 /* Info.plist */,
+			);
+			path = purerext;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,13 +326,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2E406A827E0C7F8001DA977 /* Build configuration list for PBXNativeTarget "SmsPurer" */;
 			buildPhases = (
+				58D3DB744712036A1974E519 /* [CP] Check Pods Manifest.lock */,
 				A2E4067B27E0C7F6001DA977 /* Sources */,
 				A2E4067C27E0C7F6001DA977 /* Frameworks */,
 				A2E4067D27E0C7F6001DA977 /* Resources */,
+				A2E406C027E0C82C001DA977 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A2E406BB27E0C82C001DA977 /* PBXTargetDependency */,
 			);
 			name = SmsPurer;
 			productName = SmsPurer;
@@ -157,6 +346,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2E406AB27E0C7F8001DA977 /* Build configuration list for PBXNativeTarget "SmsPurerTests" */;
 			buildPhases = (
+				174C682F369D30A83E53271A /* [CP] Check Pods Manifest.lock */,
 				A2E4069027E0C7F8001DA977 /* Sources */,
 				A2E4069127E0C7F8001DA977 /* Frameworks */,
 				A2E4069227E0C7F8001DA977 /* Resources */,
@@ -175,6 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2E406AE27E0C7F8001DA977 /* Build configuration list for PBXNativeTarget "SmsPurerUITests" */;
 			buildPhases = (
+				3A1B78EC53F0128B940EF6B9 /* [CP] Check Pods Manifest.lock */,
 				A2E4069A27E0C7F8001DA977 /* Sources */,
 				A2E4069B27E0C7F8001DA977 /* Frameworks */,
 				A2E4069C27E0C7F8001DA977 /* Resources */,
@@ -188,6 +379,24 @@
 			productName = SmsPurerUITests;
 			productReference = A2E4069E27E0C7F8001DA977 /* SmsPurerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A2E406B427E0C82C001DA977 /* purerext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E406BD27E0C82C001DA977 /* Build configuration list for PBXNativeTarget "purerext" */;
+			buildPhases = (
+				D3E01EBA072884121ACFBD55 /* [CP] Check Pods Manifest.lock */,
+				A2E406B127E0C82C001DA977 /* Sources */,
+				A2E406B227E0C82C001DA977 /* Frameworks */,
+				A2E406B327E0C82C001DA977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = purerext;
+			productName = purerext;
+			productReference = A2E406B527E0C82C001DA977 /* purerext.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,6 +419,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = A2E4067E27E0C7F6001DA977;
 					};
+					A2E406B427E0C82C001DA977 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = A2E4067A27E0C7F6001DA977 /* Build configuration list for PBXProject "SmsPurer" */;
@@ -228,6 +440,7 @@
 				A2E4067E27E0C7F6001DA977 /* SmsPurer */,
 				A2E4069327E0C7F8001DA977 /* SmsPurerTests */,
 				A2E4069D27E0C7F8001DA977 /* SmsPurerUITests */,
+				A2E406B427E0C82C001DA977 /* purerext */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E4068A27E0C7F8001DA977 /* Preview Assets.xcassets in Resources */,
+				A209399527FDE22800C2C3ED /* variables.data-00000-of-00001.sms in Resources */,
 				A2E4068727E0C7F8001DA977 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,17 +470,128 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2E406B327E0C82C001DA977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		174C682F369D30A83E53271A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmsPurerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A1B78EC53F0128B940EF6B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmsPurer-SmsPurerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58D3DB744712036A1974E519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmsPurer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E01EBA072884121ACFBD55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-purerext-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2E4067B27E0C7F6001DA977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A209398D27FDE22800C2C3ED /* Result.swift in Sources */,
+				A209399927FDE22800C2C3ED /* Constants.swift in Sources */,
+				A209399827FDE22800C2C3ED /* UnicodeScalarExtension.swift in Sources */,
 				A2E4068C27E0C7F8001DA977 /* Persistence.swift in Sources */,
+				A209398E27FDE22800C2C3ED /* BertQAHandler.swift in Sources */,
+				A209398C27FDE22800C2C3ED /* Dataset.swift in Sources */,
+				A209399727FDE22800C2C3ED /* DataExtension.swift in Sources */,
+				A209399127FDE22800C2C3ED /* WordpieceTokenizer.swift in Sources */,
 				A2E4068527E0C7F6001DA977 /* ContentView.swift in Sources */,
+				A209398F27FDE22800C2C3ED /* InputFeatures.swift in Sources */,
 				A2E4068F27E0C7F8001DA977 /* SmsPurer.xcdatamodeld in Sources */,
+				A209399627FDE22800C2C3ED /* StringExtension.swift in Sources */,
+				A209399327FDE22800C2C3ED /* FullTokenizer.swift in Sources */,
+				A209399427FDE22800C2C3ED /* FileLoader.swift in Sources */,
 				A2E4068327E0C7F6001DA977 /* SmsPurerApp.swift in Sources */,
+				A209399227FDE22800C2C3ED /* BasicTokenizer.swift in Sources */,
+				A209399027FDE22800C2C3ED /* ContentData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +612,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2E406B127E0C82C001DA977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E406B827E0C82C001DA977 /* MessageFilterExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +632,11 @@
 			isa = PBXTargetDependency;
 			target = A2E4067E27E0C7F6001DA977 /* SmsPurer */;
 			targetProxy = A2E4069F27E0C7F8001DA977 /* PBXContainerItemProxy */;
+		};
+		A2E406BB27E0C82C001DA977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2E406B427E0C82C001DA977 /* purerext */;
+			targetProxy = A2E406BA27E0C82C001DA977 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -354,7 +692,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -421,14 +759,21 @@
 		};
 		A2E406A927E0C7F8001DA977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42783B7B6B94DDE4C3A48B02 /* Pods-SmsPurer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmsPurer/SmsPurer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmsPurer/Preview Content\"";
-				DEVELOPMENT_TEAM = 95923X8WXP;
+				DEVELOPMENT_TEAM = GWG2TQ5XG2;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TensorFlowLiteC/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,14 +795,21 @@
 		};
 		A2E406AA27E0C7F8001DA977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CB3B453D610ABD7305F9FD /* Pods-SmsPurer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmsPurer/SmsPurer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmsPurer/Preview Content\"";
-				DEVELOPMENT_TEAM = 95923X8WXP;
+				DEVELOPMENT_TEAM = GWG2TQ5XG2;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/TensorFlowLiteC/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,6 +831,7 @@
 		};
 		A2E406AC27E0C7F8001DA977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25361C52914826AEAB647A0 /* Pods-SmsPurerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +852,7 @@
 		};
 		A2E406AD27E0C7F8001DA977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2738063983B69785059846F5 /* Pods-SmsPurerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +873,7 @@
 		};
 		A2E406AF27E0C7F8001DA977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869B2DEED0DF458E55836E16 /* Pods-SmsPurer-SmsPurerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +892,7 @@
 		};
 		A2E406B027E0C7F8001DA977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34484306141142FCDE451F4D /* Pods-SmsPurer-SmsPurerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +906,64 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SmsPurer;
+			};
+			name = Release;
+		};
+		A2E406BE27E0C82C001DA977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6808B630CFB8FEA0CD696C /* Pods-purerext.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = purerext/purerext.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWG2TQ5XG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = purerext/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = purerext;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xizi.SmsPurer.purerext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2E406BF27E0C82C001DA977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2814F013A93B2AAE327B5EB4 /* Pods-purerext.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = purerext/purerext.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWG2TQ5XG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = purerext/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = purerext;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xizi.SmsPurer.purerext;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -588,6 +1002,15 @@
 			buildConfigurations = (
 				A2E406AF27E0C7F8001DA977 /* Debug */,
 				A2E406B027E0C7F8001DA977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E406BD27E0C82C001DA977 /* Build configuration list for PBXNativeTarget "purerext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E406BE27E0C82C001DA977 /* Debug */,
+				A2E406BF27E0C82C001DA977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
